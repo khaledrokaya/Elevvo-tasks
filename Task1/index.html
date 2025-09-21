@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELEVVO Task 1</title>
+  <link rel="shortcut icon" href="assets/elevvo-icon.jpeg" type="image/jpeg">
+
+  <!--//* CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--//* Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!--//* bootstrap icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+    integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <button onclick="toggleSideBar();" name="openSideBar" class="open-button">Toggle Sidebar</button>
+  <aside class="sidebar" id="sidebar">
+    <!--//* sideBar header -->
+    <div class="header">
+      <div class="toggle-icon">
+        <i class="bi bi-chevron-left chevron-icon" onclick="toggleSideBar();"></i>
+      </div>
+      <div class="logo">
+        <img src="./assets/charmant-logo.jpg" alt="logo">
+      </div>
+    </div>
+    <!--//* sideBar links -->
+    <div class="link-list">
+      <div class="nav-item">
+        <i class="bi bi-house-door-fill"></i>
+        <span>Home</span>
+      </div>
+      <hr />
+      <div class="nav-item">
+        <i class="bi bi-box-seam-fill"></i>
+        <span>Products</span>
+      </div>
+      <hr />
+      <div class="nav-item">
+        <i class="bi bi-info-circle-fill"></i>
+        <span>About us</span>
+      </div>
+      <hr />
+      <div class="nav-item">
+        <i class="bi bi-envelope-fill"></i>
+        <span>Contact us</span>
+      </div>
+      <hr />
+    </div>
+    <!--//* sideBar footer -->
+    <div class="footer">
+      <i class="bi bi-r-circle-fill rights-circle"></i>
+      <p>Copyrights</p>
+    </div>
+  </aside>
+  <!-- JS Files -->
+  <script src="main.js"></script>
+</body>
+
+</html>

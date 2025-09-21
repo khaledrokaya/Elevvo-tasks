@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELEVVO Task 2</title>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+    integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="contact-container">
+    <div class="header">
+      <div class="header-icon">
+        <i class="bi bi-envelope-heart"></i>
+      </div>
+      <h1>Contact us</h1>
+      <p>Feel free to send us a message - we'd love to hear from you!</p>
+    </div>
+    <form id="contactForm" class="contact-form" action="/Task2/index.html" method="post">
+      <div class="form-group">
+        <label for="fullname">
+          <i class="bi bi-person-fill"></i>
+          Full Name
+        </label>
+        <div class="input-container">
+          <input type="text" name="fullname" id="fullname" required placeholder="Enter your full name"
+            autocomplete="name">
+          <i class="bi bi-person input-icon"></i>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="emailAddress">
+          <i class="bi bi-envelope-fill"></i>
+          Email Address
+        </label>
+        <div class="input-container">
+          <input type="email" name="emailAddress" id="emailAddress" required placeholder="Enter your email address"
+            autocomplete="email">
+          <i class="bi bi-envelope input-icon"></i>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">
+          <i class="bi bi-chat-text-fill"></i>
+          Subject
+        </label>
+        <div class="input-container">
+          <input type="text" name="subject" id="subject" required placeholder="What's this about?">
+          <i class="bi bi-chat-text input-icon"></i>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">
+          <i class="bi bi-pencil-square"></i>
+          Message
+        </label>
+        <div class="input-container">
+          <textarea name="message" id="message" rows="5" required
+            placeholder="Tell us what's on your mind..."></textarea>
+          <i class="bi bi-pencil-square input-icon textarea-icon"></i>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-button">
+        <i class="bi bi-send-fill"></i>
+        Send Message
+      </button>
+    </form>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+
+</html>
