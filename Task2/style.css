@@ -1,4 +1,3 @@
-/* Basic reset for better consistency */
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +6,10 @@
 
 body {
   font-family: 'Segoe UI', 'Arial', sans-serif;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   padding: 20px;
-  line-height: 1.6;
   min-height: 100vh;
 }
 
-/* Main container for the contact form */
 .contact-container {
   max-width: 650px;
   margin: 0 auto;
@@ -21,23 +17,19 @@ body {
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(15, 74, 11, 0.15);
   overflow: hidden;
-  transform: translateY(0);
   transition: transform 0.3s ease;
 }
 
 .contact-container:hover {
   transform: translateY(-5px);
-  box-shadow: 0 25px 50px rgba(15, 74, 11, 0.2);
+  box-shadow: 0 25px 50px rgba(15, 74, 11, 0.3);
 }
 
-/* Header section styling */
 .header {
-  background: linear-gradient(135deg, #0f4a0b 0%, #1a5c15 100%);
+  background: linear-gradient(135deg, #0f4a0b 0%, #2baf22 100%);
   color: white;
   text-align: center;
-  padding: 40px 30px;
-  position: relative;
-  overflow: hidden;
+  padding: 20px 10px;
 }
 
 .header-icon {
@@ -47,37 +39,30 @@ body {
 .header h1 {
   font-size: 2.2rem;
   margin-bottom: 10px;
-  font-weight: 700;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header p {
-  font-size: 1.1rem;
-  opacity: 0.95;
-  font-weight: 300;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  font-weight: 400;
 }
 
-/* Form styling */
 .contact-form {
-  padding: 30px 35px 45px 35px;
-  background: white;
+  padding: 30px 35px;
 }
 
-/* Individual form groups */
 .form-group {
   margin-bottom: 20px;
   position: relative;
 }
 
-/* Label styling with icons */
 label {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   margin-bottom: 10px;
   color: #0f4a0b;
   font-weight: 600;
-  font-size: 1rem;
 }
 
 label i {
@@ -85,12 +70,10 @@ label i {
   color: #0f4a0b;
 }
 
-/* Input container for positioning icons */
 .input-container {
   position: relative;
 }
 
-/* Input and textarea styling */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -104,7 +87,6 @@ textarea {
   background: #fafbfc;
 }
 
-/* Input icons styling */
 .input-icon {
   position: absolute;
   right: 18px;
@@ -112,55 +94,43 @@ textarea {
   transform: translateY(-50%);
   color: #94a3b8;
   font-size: 1.1rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   pointer-events: none;
 }
 
 .textarea-icon {
   top: 20px;
-  transform: none;
 }
 
-/* Focus effect for inputs */
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   outline: none;
   border-color: #0f4a0b;
   background: white;
-  box-shadow: 0 0 0 4px rgba(15, 74, 11, 0.1);
-  transform: translateY(-2px);
 }
 
 input[type="text"]:focus+.input-icon,
 input[type="email"]:focus+.input-icon,
 textarea:focus+.input-icon {
   color: #0f4a0b;
-  transform: translateY(-50%) scale(1.1);
+  transform: translateY(-50%) scale(1.2);
 }
 
-textarea:focus+.input-icon {
-  transform: scale(1.1);
-}
-
-/* Placeholder styling */
 input::placeholder,
 textarea::placeholder {
   color: #94a3b8;
   font-style: italic;
 }
 
-/* Textarea specific styling */
 textarea {
   resize: vertical;
-  min-height: 130px;
   line-height: 1.6;
 }
 
-/* Submit button styling */
 .submit-button {
   width: 100%;
-  background: linear-gradient(135deg, #0f4a0b 0%, #1a5c15 100%);
+  background: linear-gradient(135deg, #0f4a0b 0%, #146e0e 100%);
   color: white;
   padding: 18px 25px;
   border: none;
@@ -175,109 +145,23 @@ textarea {
   gap: 10px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  position: relative;
-  overflow: hidden;
 }
 
 
-/* Button hover effect */
 .submit-button:hover {
   background: linear-gradient(135deg, #053101 0%, #0f4a0b 100%);
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(15, 74, 11, 0.3);
+  box-shadow: 0 10px 25px rgba(15, 74, 11, 0.2);
 }
 
-.submit-button:active {
-  transform: translateY(-1px);
+.error-message {
+  display: flex;
+  gap: 10px;
+  color: #ff0000;
+  font-size: 0.8rem;
+  margin-top: 5px;
 }
 
-/* Success message */
-.success-message {
-  background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
-  color: #155724;
-  padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 25px;
-  border: 1px solid #c3e6cb;
-  font-weight: 500;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(21, 87, 36, 0.1);
-}
-
-/* Mobile responsive design */
-@media (max-width: 768px) {
-  body {
-    padding: 15px;
-  }
-
-  .header {
-    padding: 30px 20px;
-  }
-
-  .header-icon {
-    font-size: 2.5rem;
-  }
-
-  .header h1 {
-    font-size: 1.8rem;
-  }
-
-  .header p {
-    font-size: 1rem;
-  }
-
-  .contact-form {
-    padding: 35px 25px;
-  }
-
-  .form-group {
-    margin-bottom: 25px;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    padding: 12px 45px 12px 15px;
-    font-size: 0.95rem;
-  }
-
-  .input-icon {
-    right: 15px;
-    font-size: 1rem;
-  }
-
-  .submit-button {
-    padding: 15px 20px;
-    font-size: 1rem;
-  }
-}
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-  .header {
-    padding: 25px 15px;
-  }
-
-  .header h1 {
-    font-size: 1.6rem;
-  }
-
-  .contact-form {
-    padding: 25px 20px;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    padding: 10px 40px 10px 12px;
-  }
-
-  .input-icon {
-    right: 12px;
-  }
-}
-
-/* Mobile responsive design */
 @media (max-width: 768px) {
   body {
     padding: 10px;
@@ -316,7 +200,6 @@ textarea {
   }
 }
 
-/* Small mobile devices */
 @media (max-width: 480px) {
   .header {
     padding: 20px 10px;

@@ -193,7 +193,7 @@ body {
 }
 
 .badge:hover {
-  background: rgba(255, 215, 0, 0.2);
+  background: rgba(255, 217, 0, 0.329);
   border-color: rgba(255, 215, 0, 0.5);
   transform: translateY(-2px);
 }
@@ -348,7 +348,7 @@ body {
   right: 20px;
   font-size: 3rem;
   font-weight: 900;
-  color: rgba(255, 215, 0, 0.1);
+  color: rgba(255, 217, 0, 0.389);
 }
 
 .task-icon {

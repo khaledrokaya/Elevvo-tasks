@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ELEVVO Task 2</title>
-  <!-- CSS Stylesheet -->
+  <link rel="icon" type="image/jpeg" href="../public/elevvo-icon.jpeg">
+
+  <!--//* CSS Stylesheets -->
   <link rel="stylesheet" href="style.css">
-  <!-- Bootstrap Icons -->
+
+  <!--//* Bootstrap Icons -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
     integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
@@ -21,19 +24,19 @@
         <i class="bi bi-envelope-heart"></i>
       </div>
       <h1>Contact us</h1>
-      <p>Feel free to send us a message - we'd love to hear from you!</p>
+      <p>Feel free to send us a message!</p>
     </div>
-    <form id="contactForm" class="contact-form" action="/Task2/index.html" method="post">
+    <form id="contactForm" class="contact-form">
       <div class="form-group">
         <label for="fullname">
           <i class="bi bi-person-fill"></i>
           Full Name
         </label>
         <div class="input-container">
-          <input type="text" name="fullname" id="fullname" required placeholder="Enter your full name"
-            autocomplete="name">
+          <input type="text" name="fullname" id="fullname" placeholder="Enter your full name" autocomplete="name">
           <i class="bi bi-person input-icon"></i>
         </div>
+        <div class="error-message" id="fullnameError"></div>
       </div>
 
       <div class="form-group">
@@ -42,10 +45,11 @@
           Email Address
         </label>
         <div class="input-container">
-          <input type="email" name="emailAddress" id="emailAddress" required placeholder="Enter your email address"
+          <input type="text" name="emailAddress" id="emailAddress" placeholder="Enter your email address"
             autocomplete="email">
           <i class="bi bi-envelope input-icon"></i>
         </div>
+        <div class="error-message" id="emailError"></div>
       </div>
 
       <div class="form-group">
@@ -54,9 +58,10 @@
           Subject
         </label>
         <div class="input-container">
-          <input type="text" name="subject" id="subject" required placeholder="What's this about?">
+          <input type="text" name="subject" id="subject" placeholder="What's this about?">
           <i class="bi bi-chat-text input-icon"></i>
         </div>
+        <div class="error-message" id="subjectError"></div>
       </div>
 
       <div class="form-group">
@@ -65,10 +70,10 @@
           Message
         </label>
         <div class="input-container">
-          <textarea name="message" id="message" rows="5" required
-            placeholder="Tell us what's on your mind..."></textarea>
+          <textarea name="message" id="message" rows="5" placeholder="Tell us what's on your mind..."></textarea>
           <i class="bi bi-pencil-square input-icon textarea-icon"></i>
         </div>
+        <div class="error-message" id="messageError"></div>
       </div>
 
       <button type="submit" class="submit-button">

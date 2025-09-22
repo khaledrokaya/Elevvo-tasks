@@ -17,6 +17,7 @@ body {
   font-size: 1em;
   font-weight: bold;
   background-color: #0f4a0b;
+  border: none;
   color: white;
   cursor: pointer;
   border-radius: 10px;
@@ -66,6 +67,7 @@ body {
   justify-content: space-between;
   padding-bottom: 1rem;
   border-bottom: 2px solid #0f4a0b;
+  width: 100%;
 }
 
 .toggle-icon {
@@ -90,7 +92,6 @@ body {
 
 .sidebar .header .chevron-icon:hover ::before {
   background: #053101;
-  border-color: #053101;
 }
 
 .sidebar.active .header .chevron-icon::before {
@@ -100,15 +101,28 @@ body {
 .sidebar .header .logo {
   overflow: hidden;
   border-radius: 8px;
-  max-height: 65px;
   width: 0%;
+  transition: all 0.2s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar .header .logo h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 0;
   transition: all 0.2s linear;
 }
 
+.sidebar.active .header .logo h3 {
+  font-size: 1.3rem;
+}
+
 .sidebar .header .logo img {
-  transform: translateY(-30%);
-  border-radius: 4px;
-  width: 100%;
+  border-radius: 999px;
+  width: 50px;
 }
 
 .sidebar.active .header {
@@ -134,7 +148,6 @@ body {
 
 .sidebar .nav-item {
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 0.8rem 0;
   color: #0f4a0b;
@@ -146,13 +159,23 @@ body {
 .sidebar.active .nav-item {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 15px;
 }
 
 .sidebar .nav-item:hover {
   background: #0f4a0b;
   color: white;
+}
+
+.sidebar .nav-item i {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+
+.sidebar.active .nav-item i {
+  width: 3rem;
 }
 
 .sidebar .nav-item i::before {
