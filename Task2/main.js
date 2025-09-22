@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //* Form submission handling
   form.addEventListener('submit', function (event) {
-    //^ Set the flag to true when the user attempts to submit the form
+    //^ Set the flag to true when the user submit the form
     flag = true;
 
     const checkvalidity = checkValidity(event.target);
