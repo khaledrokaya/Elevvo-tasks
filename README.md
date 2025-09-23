@@ -1,10 +1,10 @@
-# 🚀 Elevvo Internship Development Portfolio
+# 🚀 Elevvo Internship Development Project
 
 A comprehensive collection of web development projects completed during my software development internship at Elevvo. This repository demonstrates progressive skill development across modern web technologies and showcases real-world application development capabilities.
 
 ## 🎯 Project Overview
 
-This portfolio contains a series of increasingly complex tasks that showcase proficiency in frontend development, from vanilla JavaScript fundamentals to modern React applications. Each project demonstrates specific technical skills and development best practices required in professional software development environments.
+This Project contains a series of increasingly complex tasks that showcase proficiency in frontend development, from vanilla JavaScript fundamentals to modern React applications. Each project demonstrates specific technical skills and development best practices required in professional software development environments.
 
 ## 📋 Completed Tasks
 
@@ -102,14 +102,6 @@ npm run build
 npm run preview
 ```
 
-## 📊 Performance Metrics
-
-| Project | Lighthouse Score | First Contentful Paint | Bundle Size |
-|---------|------------------|------------------------|-------------|
-| Level 1.1 | 98/100 | < 1.2s | ~15KB |
-| Level 1.2 | 97/100 | < 1.0s | ~18KB |
-| Level 2.3 | 95/100 | < 1.5s | ~245KB |
-
 ## 🎨 Design Principles
 
 - **Mobile-First**: All projects prioritize mobile user experience
@@ -118,11 +110,11 @@ npm run preview
 - **Modern UX**: Contemporary design patterns and interaction models
 - **Cross-Platform**: Consistent experience across devices and browsers
 
-## � Live Portfolio
+## � Live Project
 
-**Main Portfolio Hub**: [https://khaledrokaya.github.io/Elevvo-tasks/](https://khaledrokaya.github.io/Elevvo-tasks/)
+**Main Project Hub**: [https://elevvo-tasks.vercel.app/](https://elevvo-tasks.vercel.app/)
 
-> The main portfolio showcases all projects in an interactive format with direct navigation to each task.
+> The main Project showcases all projects in an interactive format with direct navigation to each task.
 
 ## 👨‍💻 Developer Profile
 
@@ -233,8 +225,8 @@ For questions, collaboration opportunities, or technical support:
 
 **🌟 Built with passion for web development and commitment to excellence 🌟**
 
-*This portfolio represents continuous learning and growth in software development*
+*This Project represents continuous learning and growth in software development*
 
-**[⬆ Back to Top](#-elevvo-internship-development-portfolio)**
+**[⬆ Back to Top](#-elevvo-internship-development-Project)**
 
 </div>
