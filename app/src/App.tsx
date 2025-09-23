@@ -1,49 +1,36 @@
-import { useEffect } from 'react'
+import React from 'react'
 import './App.css'
 
-function App() {
-  useEffect(() => {
-    // Smooth scrolling for navigation links
-    const handleSmoothScroll = (e) => {
-      const href = e.currentTarget.getAttribute('href');
-      if (href && href.startsWith('#')) {
-        e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
-      }
-    };
+const App: React.FC = () => {
+  //* Scroll to tasks section
+  const scrollToTasks = (): void => {
+    const tasksSection = document.getElementById('tasks')
+    if (tasksSection) {
+      tasksSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
-    // Add scroll effect to navbar
-    const handleScroll = () => {
-      const navbar = document.querySelector('.navbar');
-      if (navbar) {
-        if (window.scrollY > 50) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      }
-    };
-
-    // Add event listeners
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', handleSmoothScroll);
-    });
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup
-    return () => {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.removeEventListener('click', handleSmoothScroll);
-      });
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //* Static tasks data
+  const tasks = [
+    {
+      id: '1.1',
+      title: 'Collapsible Sidebar',
+      description: 'A responsive sidebar navigation menu with smooth animations and accessibility features.',
+      tech: ['HTML5', 'CSS3', 'JavaScript'],
+      link: '/Level1.1/index.html',
+      githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/app/public/Level1.1',
+      icon: 'fas fa-code',
+    },
+    {
+      id: '1.2',
+      title: 'Contact Form',
+      description: 'A responsive contact form with validation and error handling.',
+      tech: ["HTML5", "CSS3", "JavaScript"],
+      link: '/Level1.2/index.html',
+      githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/app/public/Level1.2',
+      icon: 'far fa-envelope-open',
+    },
+  ]
 
   return (
     <>
@@ -72,7 +59,10 @@ function App() {
             <div className="hero-badges">
               <span className="badge">HTML5</span>
               <span className="badge">CSS3</span>
+              <span className="badge">TailwindCSS</span>
+              <span className="badge">TypeScript</span>
               <span className="badge">JavaScript</span>
+              <span className="badge">React</span>
             </div>
             <div className="hero-buttons">
               <a href="#tasks" className="btn btn-primary">
@@ -86,7 +76,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="scroll-indicator">
+        <div className="scroll-indicator" onClick={scrollToTasks}>
           <i className="fas fa-chevron-down"></i>
         </div>
       </header>
@@ -100,49 +90,32 @@ function App() {
               <p className="section-subtitle">Explore my latest web development projects and achievements</p>
             </div>
             <div className="tasks-grid">
-              <div className="task-card">
-                <div className="task-number">1.1</div>
-                <div className="task-icon">
-                  <i className="fas fa-code"></i>
-                </div>
-                <div className="task-content">
-                  <h3>Foundation Task</h3>
-                  <p>HTML, CSS, and JavaScript fundamentals with modern design patterns and responsive layouts.</p>
-                  <div className="task-tech">
-                    <span className="tech-tag">HTML5</span>
-                    <span className="tech-tag">CSS3</span>
-                    <span className="tech-tag">JavaScript</span>
+              {tasks.map((task) => (
+                <div className="task-card" key={task.id}>
+                  <div className="task-number">{task.id}</div>
+                  <div className="task-icon">
+                    <i className={task.icon}></i>
                   </div>
-                </div>
-                <div className="task-actions">
-                  <a href="/Task1/index.html" className="task-btn">
-                    <i className="fas fa-external-link-alt"></i>
-                    View Project
-                  </a>
-                </div>
-              </div>
-
-              <div className="task-card">
-                <div className="task-number">1.2</div>
-                <div className="task-icon">
-                  <i className="fas fa-paint-brush"></i>
-                </div>
-                <div className="task-content">
-                  <h3>Advanced Styling</h3>
-                  <p>Advanced CSS techniques, animations, and interactive elements with modern design principles.</p>
-                  <div className="task-tech">
-                    <span className="tech-tag">Advanced CSS</span>
-                    <span className="tech-tag">Animations</span>
-                    <span className="tech-tag">Interactive</span>
+                  <div className="task-content">
+                    <h3>{task.title}</h3>
+                    <p>{task.description}</p>
+                    <div className="task-tech">
+                      {task.tech.map((tech) => (
+                        <span className="tech-tag" key={tech}>{tech}</span>
+                      ))}
+                    </div>
                   </div>
-                </div>
-                <div className="task-actions">
-                  <a href="/Task2/index.html" className="task-btn">
-                    <i className="fas fa-external-link-alt"></i>
-                    View Project
-                  </a>
-                </div>
-              </div>
+                  <div className="task-actions">
+                    <a href={task.link} target="_blank" rel="noopener noreferrer" className="task-btn">
+                      <i className="fas fa-external-link-alt"></i>
+                      View Live
+                    </a>
+                    <a href={task.githubLink} target="_blank" rel="noopener noreferrer" className="task-btn">
+                      <i className="fab fa-github"></i>
+                      View Code
+                    </a>
+                  </div>
+                </div>))}
             </div>
           </div>
         </section>
