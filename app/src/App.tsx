@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './App.css'
 
 const App: React.FC = () => {
@@ -18,7 +19,7 @@ const App: React.FC = () => {
       description: 'A responsive sidebar navigation menu with smooth animations and accessibility features.',
       tech: ['HTML5', 'CSS3', 'JavaScript'],
       link: '/Level1.1/index.html',
-      githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/app/public/Level1.1',
+      githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level1.1',
       icon: 'fas fa-code',
     },
     {
@@ -27,13 +28,23 @@ const App: React.FC = () => {
       description: 'A responsive contact form with validation and error handling.',
       tech: ["HTML5", "CSS3", "JavaScript"],
       link: '/Level1.2/index.html',
-      githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/app/public/Level1.2',
+      githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level1.2',
       icon: 'far fa-envelope-open',
+    },
+    {
+      id: '2.3',
+      title: 'TaskFlow Landing Page',
+      description: 'A modern, responsive landing page for a task management app with React, animations, and multiple sections.',
+      tech: ['React', 'CSS3', 'JavaScript', 'TailwindCSS'],
+      link: '/level2.3',
+      githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.3',
+      icon: 'fas fa-tasks',
+      isInternal: true
     },
   ]
 
   return (
-    <>
+    <div id='main-app'>
       <nav className="navbar">
         <div className="nav-container">
           <div className="nav-brand">
@@ -106,10 +117,17 @@ const App: React.FC = () => {
                     </div>
                   </div>
                   <div className="task-actions">
-                    <a href={task.link} target="_blank" rel="noopener noreferrer" className="task-btn">
-                      <i className="fas fa-external-link-alt"></i>
-                      View Live
-                    </a>
+                    {task.isInternal ? (
+                      <Link to={task.link} className="task-btn">
+                        <i className="fas fa-external-link-alt"></i>
+                        View Live
+                      </Link>
+                    ) : (
+                      <a href={task.link} target="_blank" rel="noopener noreferrer" className="task-btn">
+                        <i className="fas fa-external-link-alt"></i>
+                        View Live
+                      </a>
+                    )}
                     <a href={task.githubLink} target="_blank" rel="noopener noreferrer" className="task-btn">
                       <i className="fab fa-github"></i>
                       View Code
@@ -166,7 +184,7 @@ const App: React.FC = () => {
           </div>
         </section>
       </main>
-    </>
+    </div>
   )
 }
 

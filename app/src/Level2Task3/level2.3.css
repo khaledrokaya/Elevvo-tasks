@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #865EF5;
+  --primary-dark: #232333;
+  --primary-light: #9898BA;
+  --light-color: #FFFFFF;
+  --dark-color: #1A1A24;
+  --primary-font: 'Roboto', sans-serif;
+}
+
+#level2_3 * {
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+  transition: all 0.2s ease-in-out;
+}
+
+#level2_3 i {
+  font-family: "Font Awesome 6 Free";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-dark);
+  color: var(--light-color);
+  min-height: 100vh;
+}
+
+#level2_3 .header {
+  position: relative;
+  overflow: hidden;
+}
+
+#level2_3 .header::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 110%;
+  height: 110%;
+  border-radius: 0 0 60% 60% / 0 0 15% 30%;
+  z-index: -999;
+  background: url('header.svg') no-repeat center center/cover;
+}
+
+
+#level2_3 .header::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 110%;
+  height: 110%;
+  border-radius: 0 0 83% 40% / 0 0 18% 26%;
+  z-index: -1;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+}
+
+/* Scroll Animation Styles */
+#level2_3 .section-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+#level2_3 .section-animate.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Additional hover effects for enhanced interactivity */
+#level2_3 .review-card {
+  transition: all 0.3s ease;
+}
+
+#level2_3 .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(134, 94, 245, 0.3);
+}
+
+#level2_3 .review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(134, 94, 245, 0.3);
+}
+
+#level2_3 .pricing-card {
+  transition: all 0.3s ease;
+}
+
+#level2_3 .pricing-card:hover {
+  box-shadow: 0 20px 40px rgba(134, 94, 245, 0.2);
+}
+
+#level2_3 .social-icon {
+  transition: all 0.3s ease;
+}
+
+#level2_3 .social-icon:hover {
+  box-shadow: 0 10px 20px rgba(134, 94, 245, 0.4);
+}

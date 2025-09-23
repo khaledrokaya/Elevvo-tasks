@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.open-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #0f4a0b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+
+.open-button:hover {
+  background-color: #053101;
+  transform: scale(103%);
+}
+
+/*//* ====================================== */
+/*//*               SIDEBAR STYLES          */
+/*//* ====================================== */
+
+.sidebar {
+  background-color: #f8f9fa;
+  width: 70px;
+  max-width: 320px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  background-color: #ffffff;
+  box-shadow: -3px 0 15px rgba(15, 74, 11, 0.1);
+  z-index: 99999;
+  transition: all 0.3s ease;
+}
+
+.sidebar.active {
+  align-items: flex-start;
+  width: 100%;
+}
+
+/*//* ====================================== */
+/*//*            SIDEBAR HEADER              */
+/*//* ====================================== */
+
+.sidebar .header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #0f4a0b;
+  width: 100%;
+}
+
+.toggle-icon {
+  width: fit-content;
+}
+
+.sidebar .header .chevron-icon {
+  display: flex;
+  align-items: center;
+  background: #0f4a0b;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 8px;
+  width: fit-content;
+  cursor: pointer;
+  transform: rotate(0deg);
+}
+
+.sidebar .header .chevron-icon::before {
+  transition: all 0.2s ease;
+}
+
+.sidebar .header .chevron-icon:hover ::before {
+  background: #053101;
+}
+
+.sidebar.active .header .chevron-icon::before {
+  transform: rotate(180deg);
+}
+
+.sidebar .header .logo {
+  overflow: hidden;
+  border-radius: 8px;
+  width: 0%;
+  transition: all 0.2s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar .header .logo h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 0;
+  transition: all 0.2s linear;
+}
+
+.sidebar.active .header .logo h3 {
+  font-size: 1.3rem;
+}
+
+.sidebar .header .logo img {
+  border-radius: 999px;
+  width: 50px;
+}
+
+.sidebar.active .header {
+  gap: 10px;
+}
+
+.sidebar.active .header .logo {
+  width: 100%;
+}
+
+/*//* ====================================== */
+/*//*          Sidebar LINKS                 */
+/*//* ====================================== */
+
+.sidebar .link-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.sidebar .nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  color: #0f4a0b;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar.active .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sidebar .nav-item:hover {
+  background: #0f4a0b;
+  color: white;
+}
+
+.sidebar .nav-item i {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+
+.sidebar.active .nav-item i {
+  width: 3rem;
+}
+
+.sidebar .nav-item i::before {
+  font-size: 1.5rem;
+  left: 0;
+}
+
+.sidebar.active .nav-item i::before {
+  padding-left: 10px;
+}
+
+.sidebar .nav-item span {
+  font-size: 0;
+  transition: all 0.2s linear;
+}
+
+.sidebar.active .nav-item span {
+  font-size: 1rem;
+}
+
+/*//* ====================================== */
+/*//*            SIDEBAR FOOTER              */
+/*//* ====================================== */
+
+.sidebar .footer {
+  padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #0f4a0b;
+}
+
+.sidebar .footer i {
+  font-size: 1.2rem;
+  color: #0f4a0b;
+}
+
+.sidebar .footer p {
+  font-size: 0;
+  transition: all 0.2s linear;
+}
+
+.sidebar.active .footer p {
+  font-size: 1rem;
+}
+
+/*//* ====================================== */
+/*//*          RESPONSIVE STYLES             */
+/*//* ====================================== */
+
+@media (max-width: 768px) {
+  .sidebar .nav-item {
+    padding: 0.7rem 0rem;
+    font-size: 0.95rem;
+  }
+
+  .sidebar .nav-item i {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .sidebar .header .chevron-icon {
+    padding: 0.5rem;
+  }
+
+  .sidebar .nav-item {
+    padding: 0.6rem 0;
+  }
+}
+
+@media (max-width: 250px) {
+  .sidebar .header .logo img {
+    transform: translateY(0%);
+  }
+}
