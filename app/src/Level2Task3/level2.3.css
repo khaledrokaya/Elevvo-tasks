@@ -7,27 +7,23 @@
   --primary-font: 'Roboto', sans-serif;
 }
 
-#level2_3 * {
+#level2_3 * :not(i) {
   box-sizing: border-box;
   font-family: var(--primary-font);
   transition: all 0.2s ease-in-out;
-}
-
-#level2_3 i {
-  font-family: "Font Awesome 6 Free";
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: var(--primary-dark);
+#level2_3 {
   color: var(--light-color);
-  min-height: 100vh;
+  background-color: var(--dark-color);
 }
 
 #level2_3 .header {
+  z-index: 9999;
   position: relative;
   overflow: hidden;
 }

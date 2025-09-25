@@ -39,7 +39,15 @@ const App: React.FC = () => {
       link: '/level2.3',
       githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.3',
       icon: 'fas fa-tasks',
-      isInternal: true
+    },
+    {
+      id: '2.5',
+      title: 'Sanad Landing Page (SaaS App)',
+      description: 'A responsive landing page for Sanad, an online therapy platform for children, featuring Arabic support and modern design.',
+      tech: ['CSS3', 'JavaScript', 'TailwindCSS', 'HTML5'],
+      link: '/Level2.5/index.html',
+      githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.5',
+      icon: 'fas fa-earth',
     },
   ]
 
@@ -82,7 +90,7 @@ const App: React.FC = () => {
               </a>
               <a href="#contact" className="btn btn-secondary">
                 <i className="fas fa-user"></i>
-                About Me
+                Contact Me
               </a>
             </div>
           </div>
@@ -117,17 +125,10 @@ const App: React.FC = () => {
                     </div>
                   </div>
                   <div className="task-actions">
-                    {task.isInternal ? (
-                      <Link to={task.link} className="task-btn">
-                        <i className="fas fa-external-link-alt"></i>
-                        View Live
-                      </Link>
-                    ) : (
-                      <a href={task.link} target="_blank" rel="noopener noreferrer" className="task-btn">
-                        <i className="fas fa-external-link-alt"></i>
-                        View Live
-                      </a>
-                    )}
+                    <a href={task.link} target="_blank" rel="noopener noreferrer" className="task-btn">
+                      <i className="fas fa-external-link-alt"></i>
+                      View Live
+                    </a>
                     <a href={task.githubLink} target="_blank" rel="noopener noreferrer" className="task-btn">
                       <i className="fab fa-github"></i>
                       View Code

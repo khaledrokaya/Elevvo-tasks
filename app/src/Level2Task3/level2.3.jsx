@@ -301,7 +301,7 @@ function Level2_3() {
                   <i className="fas fa-envelope mr-3 text-[var(--primary-color)]"></i>
                   khaled.mustafa.jr@gmail.com
                 </li>
-                <li className="flex items-center text-gray-300">
+                <li className="flex items-center text-gray-300 text-nowrap">
                   <i className="fas fa-phone mr-3 text-[var(--primary-color)]"></i>
                   +20 1121370379
                 </li>

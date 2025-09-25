@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/jpeg" href="../elevvo-icon.jpeg" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="level2_5">
+    <!-- //* Navbar *// -->
+    <nav class="bg-[var(--level-2-5-main-color)] text-white w-full py-10 h-[50px] flex items-center">
+      <div class="container flex items-center justify-between gap-4 px-4 mx-auto lg:px-10">
+        <h1 class="font-[600] logo text-2xl">سند</h1>
+        <ul class="flex items-center justify-between max-w-[800px] flex-1 gap-2 px-4 text-lg font-[300]">
+          <li>الرئيسية</li>
+          <li>عن سند</li>
+          <li>كيف نعمل؟</li>
+          <li>الأخصائيين</li>
+          <li>المقالات</li>
+          <li>تواصل معنا</li>
+        </ul>
+        <button
+          class="bg-white session-button max-h-32 cursor-pointer text-[var(--level-2-5-text-primary-color)] px-3 py-3 rounded-full flex items-center gap-4">
+          سجل الآن
+          <div class="bg-[var(--level-2-5-main-color)] w-8 h-8 flex items-center justify-center rounded-full">
+            <i class="text-lg text-white -rotate-45 rounded-full fas fa-arrow-up"></i>
+          </div>
+        </button>
+      </div>
+    </nav>
+
+    <!-- //* Header *// -->
+    <section class="pb-10 pt-14 header">
+      <div class="container flex items-center justify-between w-full gap-6 px-4 mx-auto lg:px-10">
+        <div class="flex flex-col gap-6 w-[45%] content">
+          <div class="flex items-center gap-2 text-sm header-intro">
+            <p>أكثر من 1000 ولي أمر اختاروا منصتنا لدعم اطفالهم</p>
+            <div class="flex -space-x-3 intro-photos">
+              <span class="w-[40px] block overflow-hidden rounded-full relative"><img class="relative object-cover"
+                  src="https://randomuser.me/api/portraits/men/76.jpg" alt="person photo"></span>
+              <span class="w-[40px] block overflow-hidden rounded-full relative"><img class="relative object-cover"
+                  src="https://randomuser.me/api/portraits/women/71.jpg" alt="person photo"></span>
+              <span class="w-[40px] block overflow-hidden rounded-full relative"><img class="relative object-cover"
+                  src="https://randomuser.me/api/portraits/men/72.jpg" alt="person photo"></span>
+              <span class="w-[40px] block overflow-hidden rounded-full relative"><img class="relative object-cover"
+                  src="https://randomuser.me/api/portraits/women/73.jpg" alt="person photo"></span>
+              <span class="w-[40px] block overflow-hidden rounded-full relative"><img class="relative object-cover"
+                  src="https://randomuser.me/api/portraits/men/74.jpg" alt="person photo"></span>
+            </div>
+          </div>
+          <h1 class="text-[var(--level-2-5-main-color)] text-5xl font-[700] leading-24 my-4">طفلك يستحق الدعم<br> ونحن
+            هنا لأجله</h1>
+          <p class="text-xl">جلسات علاج نفسي للأطفال مع اخصائيين معتمدين عبر الإنترنت,<br> في بيئة امنة وسهلة
+            الإستخدام
+          </p>
+          <button
+            class="bg-[var(--level-2-5-main-color)] session-button cursor-pointer w-fit text-white px-3 py-3 rounded-full flex items-center gap-2">
+            احجز جلسة الآن
+            <div class="flex items-center justify-center bg-white rounded-full w-7 h-7 arrow-icon">
+              <i class="text-lg text-[var(--level-2-5-main-color)] -rotate-45 rounded-full fas fa-arrow-up"></i>
+            </div>
+          </button>
+          <ul class="flex gap-1 features">
+            <li>خصوصيه مضمونة</li>
+            <li>اخصائيين خبراء</li>
+            <li>حجز سهل وميسر</li>
+          </ul>
+        </div>
+        <div class="relative image-header w-[55%] overflow-hidden rounded-4xl">
+          <img src="./assets/Children.png" alt="children" />
+        </div>
+      </div>
+    </section>
+
+    <!-- //* Features *// -->
+    <section class="bg-gray-100 py-14 features">
+      <div class="container px-4 mx-auto lg:px-10">
+        <h1 class="text-lg pb-12 features-header font-[700] lg:text-4xl">نوع المساعده التي تقدمها منصه سند لطفلك؟</h1>
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div class="feature-card">
+            <div class="image">
+              <img src="./assets/smart-looking-teacher.jpg" alt="">
+            </div>
+            <div class="content">
+              <h2 class="feature-title">أخصائيين معتمدين</h2>
+              <p class="feature-desc">جلسات مع أفضل الأطباء والأخصائيين النفسيين للأطفال بخبرة معتمدة.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="image">
+              <img src="./assets/download.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h2 class="feature-title">دعم مستمر للأهالي</h2>
+              <p class="feature-desc">جلسات مع أفضل الأطباء والأخصائيين النفسيين للأطفال بخبرة معتمدة.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="image">
+              <img src="./assets/2149329045.jpg" alt="">
+            </div>
+            <div class="content">
+              <h2 class="feature-title">جلسات آمنة أونلاين</h2>
+              <p class="feature-desc">من بيتك وبكل خصوصية، من غير أي تعقيدات.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- //* How we work *// -->
+    <section class="py-14" dir="ltr">
+      <div class="container px-4 mx-auto lg:px-10">
+        <!-- Section Title -->
+        <div class="mb-10 text-center">
+          <h2 class="mb-4 text-4xl font-bold">
+            كيف نعمل؟
+          </h2>
+          <p class="text-2xl font-[400]">
+            احجز جلسة لطفلك بسهولة عبر ثلاث خطوات بسيطة وواضحة.
+          </p>
+        </div>
+        <!-- Steps Container -->
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-16 lg:flex-row lg:justify-between lg:space-y-0">
+          <!-- Step 1 -->
+          <div class="flex flex-col items-center mb-6 text-center step-container lg:flex-1">
+            <div class="relative flex items-center justify-center w-20 h-20 mb-2 bg-gray-800 rounded-full step-circle">
+              <i class="text-4xl text-white fas fa-user-doctor"></i>
+            </div>
+            <h3 class="max-w-xs mb-4 text-xl font-semibold leading-relaxed text-gray-800">
+              ابدأ الجلسة العلاج مع الطبيب لطفلك
+            </h3>
+          </div>
+          <!-- Connector 1 -->
+          <div class="items-center justify-center hidden px-8 connector-dots lg:flex">
+            <div class="flex items-center space-x-2">
+              <div class="w-4 h-4 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-4 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="flex flex-col items-center mb-6 text-center step-container lg:flex-1">
+            <div class="relative flex items-center justify-center w-20 h-20 mb-2 bg-gray-800 rounded-full step-circle">
+              <i class="text-4xl text-white fas fa-check"></i>
+            </div>
+            <h3 class="max-w-xs mb-4 text-xl font-semibold leading-relaxed text-gray-800">
+              احجز الموعد أونلاين بسهولة
+            </h3>
+          </div>
+          <!-- Connector 2 -->
+          <div class="items-center justify-center hidden h-full px-8 connector-dots lg:flex">
+            <div class="flex items-center space-x-2">
+              <div class="w-4 h-4 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-2 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+              <div class="w-4 h-4 bg-[var(--level-2-5-main-color)] rounded-full dot"></div>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="flex flex-col items-center text-center step-container lg:flex-1">
+            <div class="relative flex items-center justify-center w-20 h-20 mb-2 bg-gray-800 rounded-full step-circle">
+              <i class="text-4xl text-white fas fa-magnifying-glass"></i>
+            </div>
+            <h3 class="max-w-xs mb-4 text-xl font-semibold leading-relaxed text-gray-800">
+              ابحث عن دكتور مناسب لطفلك
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- //* Doctors *// -->
+    <section class="bg-gray-100 py-14" dir="rtl">
+      <div class="container px-4 mx-auto lg:px-10">
+        <!-- Section Title -->
+        <div class="mb-12 text-center">
+          <h2 class="mb-4 text-4xl font-bold text-gray-800">
+            أفضل الأخصائيين في دعم طفلك
+          </h2>
+        </div>
+
+        <!-- Specialists Grid -->
+        <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+
+          <!-- Large Image - Doctor 1 -->
+          <div class="relative h-full row-span-2 overflow-hidden bg-gray-100 specialist-card group rounded-2xl">
+            <div class="absolute inset-0 z-10 bg-gradient-to-br from-blue-600/20 to-teal-600/20"></div>
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&h=700&fit=crop&crop=face"
+              alt="طبيب أخصائي"
+              class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute bottom-0 left-0 right-0 z-20 p-6 bg-gradient-to-t from-black/80 to-transparent">
+              <div class="text-white">
+                <h3 class="mb-2 text-2xl font-bold">د. أحمد محمد</h3>
+                <p class="text-sm opacity-90">أخصائي نفسي للأطفال</p>
+              </div>
+            </div>
+            <div class="absolute z-20 px-3 py-1 rounded-full top-4 right-4 bg-white/20 backdrop-blur-sm">
+              <span class="text-sm font-medium text-white">متاح الآن</span>
+            </div>
+          </div>
+
+          <!-- Top Right - Doctor 2 -->
+          <div class="relative overflow-hidden !h-full bg-gray-100 specialist-card group rounded-2xl">
+            <div class="absolute inset-0 z-10 bg-gradient-to-br from-green-600/20 to-blue-600/20"></div>
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=300&fit=crop&crop=face"
+              alt="طبيب أخصائي"
+              class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute bottom-0 left-0 right-0 z-20 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <div class="text-white">
+                <h3 class="mb-1 text-lg font-bold">د. سارة أحمد</h3>
+                <p class="text-xs opacity-90">أخصائي نفسي للأطفال</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats Card -->
+          <div
+            class="relative flex items-center justify-center !h-full col-span-1 overflow-hidden bg-[var(--level-2-5-main-color)] specialist-card group rounded-2xl lg:col-span-2">
+            <div class="absolute inset-0 z-10 bg-gradient-to-br from-gray-900/50 to-gray-700/50"></div>
+            <div class="z-20 p-4 text-center text-white md:p-6">
+              <div
+                class="mb-2 text-4xl font-bold text-transparent md:text-6xl bg-gradient-to-r from-white to-gray-300 bg-clip-text">
+                +99
+              </div>
+              <p class="mb-1 text-xs font-medium md:text-xl">أكثر من 99 أخصائي جاهزين</p>
+              <p class="text-lg opacity-80">لدعم طفلك</p>
+            </div>
+            <div
+              class="absolute top-0 right-0 w-32 h-32 translate-x-16 -translate-y-16 rounded-full bg-gradient-to-bl from-white/10 to-transparent">
+            </div>
+          </div>
+
+          <!-- Bottom Center - Text Card -->
+          <div
+            class="specialist-card group col-span-1 relative overflow-hidden rounded-2xl bg-[var(--level-2-5-main-color)] h-48 lg:h-[290px] flex items-center justify-center lg:col-span-2">
+            <div class="absolute inset-0 z-10 bg-gradient-to-br from-gray-800/80 to-gray-600/80"></div>
+            <div class="z-20 p-6 text-center text-white">
+              <p class="text-xl font-medium leading-relaxed">
+                نخبة من الأطباء المتخصصين في رعاية صحة طفلك النفسية
+              </p>
+            </div>
+            <div
+              class="absolute w-24 h-24 rounded-full -bottom-4 -right-4 bg-gradient-to-tl from-white/10 to-transparent">
+            </div>
+          </div>
+
+          <!-- Bottom Right - Doctor 3 -->
+          <div class="specialist-card group relative overflow-hidden rounded-2xl bg-gray-100 h-48 lg:h-[290px]">
+            <div class="absolute inset-0 z-10 bg-gradient-to-br from-teal-600/20 to-green-600/20"></div>
+            <img src="https://plus.unsplash.com/premium_photo-1664475543697-229156438e1e?w=400&h=400&fit=crop&crop=top"
+              alt="طبيبة أخصائية"
+              class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute bottom-0 left-0 right-0 z-20 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <div class="text-white">
+                <h3 class="mb-1 text-lg font-bold">د. فاطمة علي</h3>
+                <p class="text-xs opacity-90">أخصائي تربوي</p>
+              </div>
+            </div>
+            <div class="absolute z-20 px-2 py-1 rounded-full top-4 right-4 bg-green-500/80 backdrop-blur-sm">
+              <span class="text-xs font-medium text-white">متاح</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- //* Blogs *// -->
+    <section class="py-14 blogs" dir="rtl">
+      <div class="container px-4 mx-auto lg:px-10">
+        <!-- Section Title -->
+        <div class="flex justify-between gap-4 mb-12 text-center">
+          <h2 class="mb-4 text-4xl font-bold text-gray-800">
+            المقالات
+          </h2>
+          <button
+            class="bg-[var(--level-2-5-main-color)] session-button cursor-pointer w-fit text-white px-3 py-3 rounded-full flex items-center gap-2">
+            عرض المزيد
+            <div class="flex items-center justify-center bg-white rounded-full w-7 h-7 arrow-icon">
+              <i class="text-lg text-[var(--level-2-5-main-color)] -rotate-45 rounded-full fas fa-arrow-up"></i>
+            </div>
+          </button>
+        </div>
+        <!-- Blogs Grid -->
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <!-- Blog Post 1 -->
+          <div
+            class="overflow-hidden bg-[var(--level-2-5-main-color)] flex flex-col shadow-lg blog-card group rounded-2xl">
+            <div class="relative h-64 p-4">
+              <img src="./assets/kid1.jpg" alt="مقال 1"
+                class="object-cover w-full h-full transition-transform duration-700 rounded-2xl group-hover:scale-105">
+            </div>
+            <div class="flex flex-col items-center flex-1 p-6">
+              <h3 class="flex-1 mb-6 text-2xl font-bold text-white">إزاي أعرف إن طفلي محتاج دعم نفسي؟</h3>
+              <p class="mb-4 text-gray-200">
+                علامات بسيطة ممكن تلاحظها كأب أو أم (زي الانعزال، قلق مستمر، نوبات غضب).
+              </p>
+              <button
+                class="flex px-16 py-3 mt-10 font-semibold bg-white rounded-full cursor-pointer hover:-translate-y-1 hover:bg-gray-100 w-fit">اقرأ
+                المزيد</button>
+            </div>
+          </div>
+          <!-- Blog Post 2 -->
+          <div
+            class="overflow-hidden bg-[var(--level-2-5-main-color)] flex flex-col shadow-lg blog-card group rounded-2xl">
+            <div class="relative h-64 p-4">
+              <img src="./assets/kid2.jpg" alt="مقال 1"
+                class="object-cover w-full h-full transition-transform duration-700 rounded-2xl group-hover:scale-105">
+            </div>
+            <div class="flex flex-col items-center flex-1 p-6">
+              <h3 class="flex-1 mb-6 text-2xl font-bold text-white">قلق الأطفال: إيه الطبيعي وإيه اللي محتاج تدخل؟</h3>
+              <p class="mb-4 text-gray-200">
+                علامات بسيطة ممكن تلاحظها كأب أو أم (زي الانعزال، قلق مستمر، نوبات غضب).
+              </p>
+              <button
+                class="flex px-16 py-3 mt-10 font-semibold bg-white rounded-full cursor-pointer hover:-translate-y-1 hover:bg-gray-100 w-fit">اقرأ
+                المزيد</button>
+            </div>
+          </div>
+          <!-- Blog Post 3 -->
+          <div
+            class="overflow-hidden flex flex-col bg-[var(--level-2-5-main-color)] shadow-lg blog-card group rounded-2xl">
+            <div class="relative h-64 p-4">
+              <img src="./assets/kid3.jpg" alt="مقال 1"
+                class="object-cover w-full h-full transition-transform duration-700 rounded-2xl group-hover:scale-105">
+            </div>
+            <div class="flex flex-col items-center flex-1 p-6">
+              <h3 class="flex-1 mb-6 text-2xl font-bold text-white">إزاى أعرف إن طفلي محتاج دعم نفسي؟</h3>
+              <p class="mb-4 text-gray-200">
+                علامات بسيطة ممكن تلاحظها كأب أو أم (زي الانعزال، قلق مستمر، نوبات غضب).
+              </p>
+              <button
+                class="flex px-16 py-3 mt-10 font-semibold bg-white rounded-full cursor-pointer hover:-translate-y-1 hover:bg-gray-100 w-fit">اقرأ
+                المزيد</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- //* Testimonials *// -->
+    <section class="py-16 overflow-hidden bg-gray-100" dir="rtl">
+      <div class="px-4 mx-auto max-w-7xl">
+        <!-- Section Header -->
+        <div class="flex flex-row-reverse items-center justify-between mb-12">
+          <!-- Section Title -->
+          <h2 class="w-full text-4xl font-bold text-center text-gray-800">
+            تجارب الأهالي
+          </h2>
+        </div>
+        <!-- Testimonials Slider -->
+        <div class="relative slider-container">
+          <div id="testimonials-track" class="flex gap-6 transition-transform duration-500 ease-in-out">
+            <!-- Testimonials will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Dots Indicator -->
+        <div class="flex justify-center gap-2 mt-8">
+          <div id="dots-container" class="flex gap-2">
+            <!-- Dots will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- //* Start Now *// -->
+    <section class="py-10 bg-[var(--level-2-5-main-color)] text-white" dir="rtl">
+      <div class="container px-4 mx-auto lg:px-10">
+        <div class="flex flex-col items-center justify-center text-center">
+          <h2 class="mb-4 text-4xl font-bold">
+            ابدأ الآن مع سند
+          </h2>
+          <p class="mb-8 text-xl font-[400]">
+            احجز جلسة لطفلك بسهولة عبر ثلاث خطوات بسيطة وواضحة.
+          </p>
+          <button
+            class="flex items-center gap-4 px-3 py-3 !bg-white text-black rounded-full cursor-pointer session-button">
+            احجز جلسة الآن
+            <div class="bg-[var(--level-2-5-main-color)] w-8 h-8 flex items-center justify-center rounded-full">
+              <i class="text-lg text-white -rotate-45 rounded-full fas fa-arrow-up"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- //* Footer *// -->
+    <footer class="py-16" dir="rtl">
+      <!-- Contact Section -->
+      <div class="container px-4 mx-auto lg:px-10">
+        <!-- Contact Header -->
+        <div class="mb-12 text-center">
+          <h2 class="mb-6 text-4xl font-bold text-gray-800">
+            تواصل معنا
+          </h2>
+          <p class="mx-auto text-xl leading-relaxed text-gray-600">
+            "لو عندك أي استفسار أو محتاج مساعدة في اختيار الأخصائي المناسب لطفلك، فريقنا موجود دايماً عشان يدعمك"
+          </p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="flex flex-col items-center justify-center gap-8 mb-16 md:flex-row md:gap-16">
+          <div
+            class="flex items-center gap-3 text-gray-700 transition-colors duration-300 contact-item group hover:text-gray-900">
+            <div
+              class="p-2 transition-colors duration-300 bg-gray-300 rounded-full contact-icon group-hover:bg-gray-400">
+              <i class="text-lg fas fa-envelope"></i>
+            </div>
+            <span class="text-lg font-medium">البريد الإلكتروني: support@sanad.com</span>
+          </div>
+
+          <div
+            class="flex items-center gap-3 text-gray-700 transition-colors duration-300 contact-item group hover:text-gray-900">
+            <div
+              class="p-2 transition-colors duration-300 bg-gray-300 rounded-full contact-icon group-hover:bg-gray-400">
+              <i class="text-lg fas fa-phone"></i>
+            </div>
+            <span class="text-lg font-medium">هاتف: +20 10 1234 5678</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Main Section -->
+      <div class="bg-[var(--level-2-5-main-color)] rounded-[3rem] mx-4 lg:mx-10 text-center">
+        <div class="container px-4 py-16 mx-auto lg:px-10">
+          <!-- Brand Section -->
+          <div class="mb-16 text-center">
+            <h3 class="mb-6 text-4xl font-bold text-white">سند</h3>
+            <p class="max-w-3xl mx-auto text-lg leading-relaxed text-gray-200">
+              جلسات علاج نفسي للأطفال مع أخصائيين معتمدين عبر الإنترنت، في بيئة آمنة وسهولة الاستخدام.
+            </p>
+          </div>
+
+          <!-- Footer Links -->
+          <div
+            class="grid items-center justify-center grid-cols-2 gap-8 mb-16 text-center md:grid-cols-3 lg:grid-cols-6">
+            <div class="footer-column">
+              <h4
+                class="mb-4 text-lg font-semibold text-white transition-colors duration-300 cursor-pointer footer-title hover:text-gray-300">
+                الرئيسية
+              </h4>
+            </div>
+
+            <div class="footer-column">
+              <h4
+                class="mb-4 text-lg font-semibold text-white transition-colors duration-300 cursor-pointer footer-title hover:text-gray-300">
+                عن سند
+              </h4>
+            </div>
+
+            <div class="footer-column">
+              <h4
+                class="mb-4 text-lg font-semibold text-white transition-colors duration-300 cursor-pointer footer-title hover:text-gray-300">
+                الأخصائيين
+              </h4>
+            </div>
+
+            <div class="footer-column">
+              <h4
+                class="mb-4 text-lg font-semibold text-white transition-colors duration-300 cursor-pointer footer-title hover:text-gray-300">
+                كيف نعمل
+              </h4>
+            </div>
+
+            <div class="footer-column">
+              <h4
+                class="mb-4 text-lg font-semibold text-white transition-colors duration-300 cursor-pointer footer-title hover:text-gray-300">
+                المقالات
+              </h4>
+            </div>
+
+            <div class="footer-column">
+              <h4
+                class="mb-4 text-lg font-semibold text-white transition-colors duration-300 cursor-pointer footer-title hover:text-gray-300">
+                تواصل معنا
+              </h4>
+            </div>
+          </div>
+
+          <!-- Footer Bottom -->
+          <div class="pt-8 border-t border-gray-600">
+            <div class="flex flex-col items-center justify-between gap-4 text-gray-400 md:flex-row">
+              <div class="transition-colors duration-300 footer-text hover:text-gray-300">
+                <p>© 2025 منصة سند - جميع الحقوق محفوظة.</p>
+              </div>
+
+              <div class="transition-colors duration-300 footer-text hover:text-gray-300">
+                <p>"نلتزم بحماية خصوصية بياناتك وسرية كل الجلسات"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="تبديل المظهر">
+      <i class="fas fa-sun icon sun-icon"></i>
+      <i class="fas fa-moon icon moon-icon"></i>
+    </button>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
