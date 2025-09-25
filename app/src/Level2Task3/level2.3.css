@@ -58,7 +58,7 @@ html {
 #level2_3 .section-animate {
   opacity: 0;
   transform: translateY(50px);
-  transition: all 0.8s ease-out;
+  transition: all 0.9s ease-out;
 }
 
 #level2_3 .section-animate.animate-in {

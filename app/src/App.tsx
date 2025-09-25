@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './App.css'
 
 const App: React.FC = () => {
@@ -124,10 +125,17 @@ const App: React.FC = () => {
                     </div>
                   </div>
                   <div className="task-actions">
-                    <a href={task.link} target="_blank" rel="noopener noreferrer" className="task-btn">
-                      <i className="fas fa-external-link-alt"></i>
-                      View Live
-                    </a>
+                    {task.id === '2.3' ? (
+                      <Link to={task.link} className="task-btn">
+                        <i className="fas fa-external-link-alt"></i>
+                        View Live
+                      </Link>
+                    ) : (
+                      <a href={task.link} target="_blank" rel="noopener noreferrer" className="task-btn">
+                        <i className="fas fa-external-link-alt"></i>
+                        View Live
+                      </a>
+                    )}
                     <a href={task.githubLink} target="_blank" rel="noopener noreferrer" className="task-btn">
                       <i className="fab fa-github"></i>
                       View Code

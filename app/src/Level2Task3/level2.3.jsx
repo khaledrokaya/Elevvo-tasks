@@ -5,6 +5,11 @@ function Level2_3() {
   const [navOpen, setNavOpen] = useState(false);
   const sectionsRef = useRef([]);
 
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Intersection Observer for scroll animations
   useEffect(() => {
     const observer = new IntersectionObserver(
