@@ -37,7 +37,7 @@ html {
   height: 110%;
   border-radius: 0 0 60% 60% / 0 0 15% 30%;
   z-index: -999;
-  background: url('header.svg') no-repeat center center/cover;
+  background: url('/header.svg') no-repeat center center/cover;
 }
 
 
