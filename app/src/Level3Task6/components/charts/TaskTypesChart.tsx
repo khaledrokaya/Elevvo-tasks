@@ -14,10 +14,10 @@ const TaskTypesChart: React.FC<TaskTypesChartProps> = ({ data }) => {
       <ResponsiveContainer width="100%" height={300}>
         <PieChart>
           <Pie
-            data={data}
+            data={data as any}
             cx="50%"
             cy="50%"
-            label={({ percent }) => `${(percent * 100).toFixed(0)}%`}
+            label={(({ percent }: { percent: number }) => `${(percent * 100).toFixed(0)}%`) as any}
             outerRadius={100}
             dataKey="value"
           >
