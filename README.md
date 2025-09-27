@@ -29,12 +29,18 @@ This Project contains a series of increasingly complex tasks that showcase profi
 - **Live Demo**: [View Level 2.3](https://khaledrokaya.github.io/Elevvo-tasks/app/)
 - **Source Code**: [GitHub](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.3)
 
-### 🔹 Level 2.3 - TaskFlow Landing Page (React)
-- **Project**: Modern task management application landing page
-- **Technologies**: React 18+, TailwindCSS, CSS3, Vite
-- **Key Features**: Component architecture, scroll animations, pricing sections, testimonials
-- **Live Demo**: [View Level 2.3](https://khaledrokaya.github.io/Elevvo-tasks/app/)
-- **Source Code**: [GitHub](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.3)
+### 🔹 Level 2.4 - Personal Blog Homepage ⭐ **Latest**
+- **Project**: Modern personal blog with dynamic filtering and pagination
+- **Technologies**: React 18+, TailwindCSS 4, Font Awesome, Vite
+- **Key Features**: 
+  - Blog post cards with category filtering
+  - Real-time search functionality
+  - Pagination with 6 posts per page
+  - Responsive grid layout (1/2/3 columns)
+  - Font Awesome icons integration
+  - Scoped styling to avoid conflicts
+- **Live Demo**: [View Level 2.4](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level2.4/)
+- **Source Code**: [GitHub](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.4)
 
 ### 🔹 Level 2.5 - Interactive School Website
 - **Project**: Multi-page educational website with image galleries
@@ -50,7 +56,7 @@ This Project contains a series of increasingly complex tasks that showcase profi
 - **Live Demo**: [View Level 3.6](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level3.6/)
 - **Source Code**: [GitHub](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.6)
 
-### 🔹 Level 3.7 - Weather Dashboard ⭐ **Latest**
+### 🔹 Level 3.7 - Weather Dashboard
 - **Project**: Real-time weather application with geolocation and forecasting
 - **Technologies**: React 18+, TypeScript, Axios, TailwindCSS, WeatherAPI
 - **Key Features**: 
@@ -67,7 +73,7 @@ This Project contains a series of increasingly complex tasks that showcase profi
 ### Frontend Technologies
 - **Languages**: HTML5, CSS3, JavaScript ES6+, TypeScript, JSX
 - **Frameworks**: React 18+
-- **CSS Frameworks**: TailwindCSS
+- **CSS Frameworks**: TailwindCSS 4, Font Awesome
 - **HTTP Clients**: Axios
 - **Build Tools**: Vite, npm
 - **Version Control**: Git, GitHub
@@ -82,6 +88,9 @@ This Project contains a series of increasingly complex tasks that showcase profi
 - ✅ **Real-time Data**: Live data fetching and display
 - ✅ **Geolocation Services**: Browser geolocation API integration
 - ✅ **CSS Architecture**: BEM methodology, CSS Grid, Flexbox, Glass morphism
+- ✅ **State Management**: Complex filtering, search, and pagination logic
+- ✅ **Icon Integration**: Font Awesome implementation and customization
+- ✅ **Scoped Styling**: CSS isolation and conflict prevention strategies
 - ✅ **Performance Optimization**: Code splitting, lazy loading, optimized assets
 - ✅ **Accessibility**: WCAG compliance, semantic HTML, keyboard navigation
 - ✅ **Cross-browser Compatibility**: Tested across modern browsers
@@ -102,6 +111,7 @@ Elevvo-tasks/
 │   ├── Level1.1/           # Sidebar navigation project
 │   ├── Level1.2/           # Contact form project
 │   ├── Level2.3/           # TaskFlow React project
+│   ├── Level2.4/           # Personal blog homepage
 │   ├── Level2.5/           # Interactive school website
 │   ├── Level3.6/           # FreelancePro dashboard
 │   └── Level3.7/           # Weather dashboard
@@ -125,9 +135,15 @@ Elevvo-tasks/
    cd Elevvo-tasks
    ```
 
-2. **For React Application (Level 2.3 and main app)**
+2. **For React Applications (Level 2.3, 2.4 and main app)**
    ```bash
+   # For main app
    cd app
+   npm install
+   npm run dev
+   
+   # For Level 2.4 Personal Blog
+   cd Tasks/Level2.4
    npm install
    npm run dev
    ```
@@ -198,7 +214,11 @@ This repository welcomes contributions and feedback from the development communi
 - ✅ React component architecture and hooks
 - ✅ State management and lifecycle methods
 - ✅ Modern build tools and development workflow
-- ✅ CSS frameworks integration (TailwindCSS)
+- ✅ CSS frameworks integration (TailwindCSS 4)
+- ✅ Dynamic filtering and search functionality
+- ✅ Pagination and data management
+- ✅ Font Awesome icons integration
+- ✅ Scoped styling and CSS isolation
 - ✅ Multi-page website architecture
 - ✅ Interactive media galleries and animations
 

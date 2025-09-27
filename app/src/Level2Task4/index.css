@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+.level2-4-blog {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+.level2-4-blog ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.level2-4-blog ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.level2-4-blog ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.level2-4-blog ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Fix for Tailwind CSS 4 - Active states */
+.level2-4-blog .pagination-active {
+  background-color: #2563eb !important;
+  color: white !important;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05) !important;
+}
+
+.level2-4-blog .category-active {
+  background-color: #2563eb !important;
+  color: white !important;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05) !important;
+}
+
+.level2-4-blog .category-inactive {
+  background-color: white !important;
+  color: #374151 !important;
+  border: 1px solid #d1d5db !important;
+}
+
+.level2-4-blog .category-inactive:hover {
+  background-color: #f9fafb !important;
+  border-color: #9ca3af !important;
+}

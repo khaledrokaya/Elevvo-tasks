@@ -41,6 +41,15 @@ const App: React.FC = () => {
       icon: 'fas fa-tasks',
     },
     {
+      id: '2.4',
+      title: 'Blog Page',
+      description: 'A responsive blog page with category filtering, search functionality, and pagination, built with React.',
+      tech: ['React', 'CSS3', 'JavaScript', 'TailwindCSS'],
+      link: '/level2.4',
+      githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.4',
+      icon: 'fas fa-blog',
+    },
+    {
       id: '2.5',
       title: 'Sanad Landing Page (SaaS App)',
       description: 'A responsive landing page for Sanad, an online therapy platform for children, featuring Arabic support and modern design.',
