@@ -2,7 +2,7 @@ import axios from 'axios';
 import { WeatherData, GeolocationCoords, ForecastData, ProcessedForecastDay } from '../types/weather';
 
 const API_KEY = '5b1029f6eaa24325b4311148252609';
-const BASE_URL = 'http://api.weatherapi.com/v1';
+const BASE_URL = 'https://api.weatherapi.com/v1';
 
 class WeatherService {
   private api;
