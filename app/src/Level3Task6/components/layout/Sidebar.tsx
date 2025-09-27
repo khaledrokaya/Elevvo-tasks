@@ -10,9 +10,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
   const location = useLocation();
 
   const menuItems = [
-    { path: '/', icon: 'fas fa-home', label: 'Overview' },
-    { path: '/projects', icon: 'fas fa-folder', label: 'Projects' },
-    { path: '/profile', icon: 'fas fa-user', label: 'Profile Settings' },
+    { path: '/level3.6', icon: 'fas fa-home', label: 'Overview' },
+    { path: '/level3.6/projects', icon: 'fas fa-folder', label: 'Projects' },
+    { path: '/level3.6/profile', icon: 'fas fa-user', label: 'Profile Settings' },
   ];
 
   const isActive = (path: string) => {

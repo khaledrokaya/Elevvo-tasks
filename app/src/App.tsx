@@ -49,6 +49,15 @@ const App: React.FC = () => {
       githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.5',
       icon: 'fas fa-earth',
     },
+    {
+      id: '3.6',
+      title: 'FreelancePro Dashboard',
+      description: 'A sleek, responsive dashboard UI with light and dark modes, built with React and TailwindCSS.',
+      tech: ['React', 'TypeScript', 'TailwindCSS', 'TypeScript', 'Recharts'],
+      link: '/level3.6',
+      githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.6',
+      icon: 'fas fa-chart-line',
+    }
   ]
 
   return (
