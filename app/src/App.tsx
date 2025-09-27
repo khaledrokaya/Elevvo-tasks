@@ -53,11 +53,20 @@ const App: React.FC = () => {
       id: '3.6',
       title: 'FreelancePro Dashboard',
       description: 'A sleek, responsive dashboard UI with light and dark modes, built with React and TailwindCSS.',
-      tech: ['React', 'TypeScript', 'TailwindCSS', 'TypeScript', 'Recharts'],
+      tech: ['React', 'TailwindCSS', 'TypeScript', 'Recharts'],
       link: '/level3.6',
       githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.6',
       icon: 'fas fa-chart-line',
-    }
+    },
+    {
+      id: '3.7',
+      title: 'Weather Dashboard',
+      description: 'A weather application that fetches real-time data based on user location or search input, built with React and TypeScript.',
+      tech: ['React', 'TypeScript', 'CSS3', 'Weather API', 'axios', 'TailwindCSS'],
+      link: '/level3.7',
+      githubLink: 'https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.7',
+      icon: 'fas fa-cloud-sun',
+    },
   ]
 
   return (
@@ -91,6 +100,9 @@ const App: React.FC = () => {
               <span className="badge">TypeScript</span>
               <span className="badge">JavaScript</span>
               <span className="badge">React</span>
+              <span className="badge">axios</span>
+              <span className="badge">Recharts</span>
+              <span className="badge">Weather API</span>
             </div>
             <div className="hero-buttons">
               <a href="#tasks" className="btn btn-primary">

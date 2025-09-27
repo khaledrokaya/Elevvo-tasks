@@ -9,6 +9,7 @@ import Layout from './Level3Task6/components/layout/Layout.tsx'
 import Overview from './Level3Task6/pages/Overview.tsx'
 import Projects from './Level3Task6/pages/Projects.tsx'
 import Profile from './Level3Task6/pages/Profile.tsx'
+import Weather from './Level3Task7/weather.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -21,6 +22,8 @@ createRoot(document.getElementById('root')!).render(
           <Route path="projects" element={<Projects />} />
           <Route path="profile" element={<Profile />} />
         </Route>
+        <Route path="/level3.7" element={<Weather />} />
+        <Route path="*" element={<h1 className="p-4">404 Not Found</h1>} />
       </Routes>
     </Router>
   </StrictMode>,

@@ -4,7 +4,7 @@ import { WeatherData, ProcessedForecastDay } from './types/weather';
 import { getWeatherBackground, getWeatherIcon } from './utils/weatherHelpers';
 import './index.css';
 
-function App() {
+function Weather() {
   const [currentWeather, setCurrentWeather] = useState<WeatherData | null>(null);
   const [forecast, setForecast] = useState<ProcessedForecastDay[]>([]);
   const [loading, setLoading] = useState(false);
@@ -253,4 +253,4 @@ function App() {
   );
 }
 
-export default App;
+export default Weather;

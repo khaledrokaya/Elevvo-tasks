@@ -29,23 +29,63 @@ This Project contains a series of increasingly complex tasks that showcase profi
 - **Live Demo**: [View Level 2.3](https://khaledrokaya.github.io/Elevvo-tasks/app/)
 - **Source Code**: [GitHub](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.3)
 
+### 🔹 Level 2.3 - TaskFlow Landing Page (React)
+- **Project**: Modern task management application landing page
+- **Technologies**: React 18+, TailwindCSS, CSS3, Vite
+- **Key Features**: Component architecture, scroll animations, pricing sections, testimonials
+- **Live Demo**: [View Level 2.3](https://khaledrokaya.github.io/Elevvo-tasks/app/)
+- **Source Code**: [GitHub](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.3)
+
+### 🔹 Level 2.5 - Interactive School Website
+- **Project**: Multi-page educational website with image galleries
+- **Technologies**: HTML5, CSS3, JavaScript ES6+
+- **Key Features**: Interactive galleries, responsive design, smooth animations
+- **Live Demo**: [View Level 2.5](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level2.5/)
+- **Source Code**: [GitHub](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.5)
+
+### 🔹 Level 3.6 - Professional Dashboard
+- **Project**: Data visualization dashboard with interactive charts
+- **Technologies**: React 18+, TypeScript, Chart Libraries, TailwindCSS
+- **Key Features**: Interactive charts, responsive layout, professional UI design
+- **Live Demo**: [View Level 3.6](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level3.6/)
+- **Source Code**: [GitHub](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.6)
+
+### 🔹 Level 3.7 - Weather Dashboard ⭐ **Latest**
+- **Project**: Real-time weather application with geolocation and forecasting
+- **Technologies**: React 18+, TypeScript, Axios, TailwindCSS, WeatherAPI
+- **Key Features**: 
+  - Real-time weather data with geolocation
+  - 3-day forecast with professional UI
+  - Dynamic weather backgrounds
+  - Glass morphism design effects
+  - Mobile-first responsive design
+- **Live Demo**: [View Level 3.7](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level3.7/)
+- **Source Code**: [GitHub](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.7)
+
 ## 🛠️ Technical Skills Demonstrated
 
 ### Frontend Technologies
-- **Languages**: HTML5, CSS3, JavaScript ES6+, JSX
+- **Languages**: HTML5, CSS3, JavaScript ES6+, TypeScript, JSX
 - **Frameworks**: React 18+
 - **CSS Frameworks**: TailwindCSS
+- **HTTP Clients**: Axios
 - **Build Tools**: Vite, npm
 - **Version Control**: Git, GitHub
+- **APIs**: RESTful API integration, WeatherAPI.com
 
 ### Core Competencies
 - ✅ **Responsive Web Design**: Mobile-first approach across all projects
 - ✅ **Modern JavaScript**: ES6+ features, async/await, DOM manipulation
+- ✅ **TypeScript Development**: Type safety, interfaces, advanced typing
 - ✅ **React Development**: Hooks, component lifecycle, state management
-- ✅ **CSS Architecture**: BEM methodology, CSS Grid, Flexbox
+- ✅ **API Integration**: RESTful APIs, error handling, loading states
+- ✅ **Real-time Data**: Live data fetching and display
+- ✅ **Geolocation Services**: Browser geolocation API integration
+- ✅ **CSS Architecture**: BEM methodology, CSS Grid, Flexbox, Glass morphism
 - ✅ **Performance Optimization**: Code splitting, lazy loading, optimized assets
 - ✅ **Accessibility**: WCAG compliance, semantic HTML, keyboard navigation
 - ✅ **Cross-browser Compatibility**: Tested across modern browsers
+- ✅ **Professional UI/UX**: Modern design patterns, animations, user feedback
 
 ## 🏗️ Project Architecture
 
@@ -61,7 +101,10 @@ Elevvo-tasks/
 ├── Tasks/                  # Individual task implementations
 │   ├── Level1.1/           # Sidebar navigation project
 │   ├── Level1.2/           # Contact form project
-│   └── Level2.3/           # TaskFlow React project
+│   ├── Level2.3/           # TaskFlow React project
+│   ├── Level2.5/           # Interactive school website
+│   ├── Level3.6/           # FreelancePro dashboard
+│   └── Level3.7/           # Weather dashboard
 ├── LICENSE                 # MIT License
 ├── SECURITY.md            # Security policy
 └── README.md              # Project documentation
@@ -151,17 +194,28 @@ This repository welcomes contributions and feedback from the development communi
 - ✅ Vanilla JavaScript DOM manipulation and event handling
 - ✅ Cross-browser compatibility and optimization
 
-### Phase 2: Modern Development (Level 2.3+)
+### Phase 2: Modern Development (Level 2.3 - 2.5)
 - ✅ React component architecture and hooks
 - ✅ State management and lifecycle methods
 - ✅ Modern build tools and development workflow
 - ✅ CSS frameworks integration (TailwindCSS)
+- ✅ Multi-page website architecture
+- ✅ Interactive media galleries and animations
 
-### Phase 3: Professional Skills
+### Phase 3: Advanced Development (Level 3.6 - 3.7)
+- ✅ TypeScript integration and type safety
+- ✅ Real-time API integration and data visualization
+- ✅ Geolocation services and browser APIs
+- ✅ Advanced UI/UX with glass morphism effects
+- ✅ Professional dashboard development
+- ✅ Weather data integration and forecasting
+
+### Phase 4: Professional Skills
 - ✅ Git version control and collaboration
 - ✅ Performance optimization and metrics tracking
 - ✅ Documentation and technical writing
 - ✅ Code review and quality assurance
+- ✅ Error handling and user experience optimization
 
 ## 🔧 Development Tools & Environment
 
