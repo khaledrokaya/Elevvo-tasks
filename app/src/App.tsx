@@ -156,7 +156,7 @@ const App: React.FC = () => {
                   </div>
                   <div className="task-actions">
                     {task.id === '2.3' ? (
-                      <Link to={task.link} className="task-btn">
+                      <Link to={task.link} target='_blank' className="task-btn">
                         <i className="fas fa-external-link-alt"></i>
                         View Live
                       </Link>
