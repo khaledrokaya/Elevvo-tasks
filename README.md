@@ -4,14 +4,14 @@
 
 **Professional Web Development Projects & Modern Frontend Solutions**
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://elevvo-tasks.vercel.app/)
+[![Live Website](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://elevvo-tasks.vercel.app/)
 [![GitHub Stars](https://img.shields.io/github/stars/khaledrokaya/Elevvo-tasks?style=social)](https://github.com/khaledrokaya/Elevvo-tasks)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/khaled-mostafa-jr)
 
 *A comprehensive showcase of progressive web development skills through real-world projects*
 
-[**🌐 Live Portfolio**](https://elevvo-tasks.vercel.app/) • [**📱 Mobile Demo**](https://khaledrokaya.github.io/Elevvo-tasks/) • [**💼 Developer Profile**](https://www.khaled-mostafa.me/)
+[**🌐 Live Website**](https://elevvo-tasks.vercel.app/) • [**💼 Developer Profile**](https://www.khaled-mostafa.me/)
 
 </div>
 
