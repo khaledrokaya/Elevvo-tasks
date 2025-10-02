@@ -45,7 +45,7 @@ function BlogCard({ post }) {
           {post.description}
         </p>
         <div className="flex items-center justify-between">
-          <button className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-blue-600 transition-all duration-300 rounded-full cursor-pointer hover:text-white hover:bg-blue-500 hover:text-blue-700 group">
+          <button className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-blue-600 transition-all duration-300 rounded-full cursor-pointer hover:text-white hover:bg-blue-500 group">
             Read More
             <i className="ml-1 transition-transform transform fas fa-arrow-right group-hover:translate-x-1"></i>
           </button>
