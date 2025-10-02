@@ -22,7 +22,7 @@
 This repository represents a **complete software development journey** showcasing expertise in modern web technologies. Built during my professional internship at **Elevvo**, each project demonstrates progressive skill development from foundational web technologies to advanced React applications with real-world functionality.
 
 ### 🎯 **Core Achievements**
-- ✅ **8 Production-Ready Projects** with live deployments
+- ✅ **7 Production-Ready Projects** with live deployments
 - ✅ **Modern Tech Stack Mastery** (React, TypeScript, TailwindCSS)
 - ✅ **Professional Development Practices** (Git workflows, code reviews, documentation)
 - ✅ **Mobile-First Responsive Design** across all projects
@@ -45,7 +45,7 @@ This repository represents a **complete software development journey** showcasin
 - **Glass morphism design** effects
 - **Mobile-responsive** architecture
 
-[**🔗 Live Demo**](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level3.7/) | [**📝 Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.7)
+[**🔗 Live Demo**](https://elevvo-tasks.vercel.app/level3.7) | [**📝 Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.7)
 
 </td>
 <td width="50%">
@@ -58,7 +58,7 @@ This repository represents a **complete software development journey** showcasin
 - **Responsive data layouts**
 - **Professional UI/UX** design
 
-[**🔗 Live Demo**](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level3.6/) | [**📝 Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.6)
+[**🔗 Live Demo**](https://elevvo-tasks.vercel.app/level3.6) | [**📝 Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.6)
 
 </td>
 </tr>
@@ -73,20 +73,76 @@ This repository represents a **complete software development journey** showcasin
 - **TailwindCSS 4** integration
 - **Font Awesome** icons system
 
-[**🔗 Live Demo**](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level2.4/) | [**📝 Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.4)
+[**🔗 Live Demo**](https://elevvo-tasks.vercel.app/level2.4) | [**📝 Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.4)
 
 </td>
 <td width="50%">
 
 ### 🎯 **TaskFlow Landing Page**
-**Modern SaaS Marketing Website**
+**Full web page for a fictional app called TaskFlow – a tool that helps people organize their tasks**
 
 - **Component-based architecture**
 - **Scroll animations** & effects
 - **Pricing sections** & testimonials
 - **Conversion-optimized** design
 
-[**🔗 Live Demo**](https://khaledrokaya.github.io/Elevvo-tasks/app/) | [**📝 Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.3)
+[**🔗 Live Demo**](https://elevvo-tasks.vercel.app/level2.3) | [**📝 Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.3)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🏥 **Sanad Website**
+**Marketing landing page for a fictional tech product or SaaS tool**
+
+- **Interactive galleries** & animations
+- **Responsive design** patterns
+- **Smooth animations** & effects
+- **Modern UI/UX** implementation
+
+[**🔗 Live Demo**](https://elevvo-tasks.vercel.app/Level2.5/index.html) | [**📝 Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.5)
+
+</td>
+<td width="50%">
+
+### 📋 **Advanced Contact Form**
+**Dynamic form with real-time validation**
+
+- **Form validation** & error handling
+- **Real-time feedback** system
+- **Responsive design** patterns
+- **User experience** optimization
+
+[**🔗 Live Demo**](https://elevvo-tasks.vercel.app/Level1.2/index.html) | [**📝 Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level1.2)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🔧 **Sidebar Navigation**
+**Responsive component with smooth animations**
+
+- **Mobile responsiveness** & accessibility
+- **Smooth transitions** & animations
+- **Interactive components**
+- **Clean code** implementation
+
+[**🔗 Live Demo**](https://elevvo-tasks.vercel.app/Level1.1/index.html) | [**📝 Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level1.1)
+
+</td>
+<td width="50%">
+
+### 🎨 **Complete Portfolio**
+**All 7 Projects in One Hub**
+
+- **Unified navigation** system
+- **Project showcase** gallery
+- **Professional presentation**
+- **Easy project** access
+
+[**🔗 View All Projects**](https://elevvo-tasks.vercel.app/) | [**📝 Repository**](https://github.com/khaledrokaya/Elevvo-tasks)
 
 </td>
 </tr>
@@ -134,33 +190,33 @@ Deployment     → Vercel, GitHub Pages
 *Real-time weather application with professional UI*
 - **Stack**: React 18+ • TypeScript • WeatherAPI • TailwindCSS
 - **Features**: Geolocation, 3-day forecast, glass morphism, mobile-responsive
-- [**Live Demo**](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level3.7/) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.7)
+- [**Live Demo**](https://elevvo-tasks.vercel.app/level3.7) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.7)
 
 #### **Level 3.6 - Professional Dashboard** 
 *Data visualization dashboard with interactive charts*
 - **Stack**: React 18+ • TypeScript • Chart Libraries • TailwindCSS
 - **Features**: Interactive charts, responsive layout, professional UI design
-- [**Live Demo**](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level3.6/) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.6)
+- [**Live Demo**](https://elevvo-tasks.vercel.app/level3.6) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level3.6)
 
 ### **💻 Intermediate Level Projects**
 
-#### **Level 2.5 - Interactive School Website** 
-*Multi-page educational website with image galleries*
+#### **Level 2.5 - Sanad Website** 
+*Marketing landing page for a fictional tech product or SaaS tool*
 - **Stack**: HTML5 • CSS3 • JavaScript ES6+
 - **Features**: Interactive galleries, responsive design, smooth animations
-- [**Live Demo**](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level2.5/) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.5)
+- [**Live Demo**](https://elevvo-tasks.vercel.app/Level2.5/index.html) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.5)
 
 #### **Level 2.4 - Personal Blog Platform** 
 *Modern blog with dynamic filtering and pagination*
 - **Stack**: React 18+ • TailwindCSS 4 • Font Awesome • Vite
 - **Features**: Category filtering, real-time search, pagination, responsive grid
-- [**Live Demo**](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level2.4/) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.4)
+- [**Live Demo**](https://elevvo-tasks.vercel.app/level2.4) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.4)
 
 #### **Level 2.3 - TaskFlow Landing Page** 
-*Modern task management application landing page*
+*Full web page for a fictional app called TaskFlow – a tool that helps people organize their tasks*
 - **Stack**: React 18+ • TailwindCSS • Vite
 - **Features**: Component architecture, scroll animations, pricing sections
-- [**Live Demo**](https://khaledrokaya.github.io/Elevvo-tasks/app/) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.3)
+- [**Live Demo**](https://elevvo-tasks.vercel.app/level2.3) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level2.3)
 
 ### **🎯 Foundation Level Projects**
 
@@ -168,13 +224,13 @@ Deployment     → Vercel, GitHub Pages
 *Dynamic contact form with real-time validation*
 - **Stack**: HTML5 • CSS3 • JavaScript ES6+
 - **Features**: Form validation, error handling, responsive design
-- [**Live Demo**](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level1.2/) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level1.2)
+- [**Live Demo**](https://elevvo-tasks.vercel.app/Level1.2/index.html) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level1.2)
 
 #### **Level 1.1 - Interactive Sidebar Navigation** 
 *Responsive collapsible sidebar with smooth animations*
 - **Stack**: HTML5 • CSS3 • Vanilla JavaScript
 - **Features**: Mobile responsiveness, accessibility features, smooth transitions
-- [**Live Demo**](https://khaledrokaya.github.io/Elevvo-tasks/Tasks/Level1.1/) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level1.1)
+- [**Live Demo**](https://elevvo-tasks.vercel.app/Level1.1/index.html) • [**Source Code**](https://github.com/khaledrokaya/Elevvo-tasks/tree/main/Tasks/Level1.1)
 
 </details>
 
@@ -244,7 +300,7 @@ Elevvo-tasks/
 │   ├── Level1.2/             # Advanced contact form
 │   ├── Level2.3/             # TaskFlow landing page
 │   ├── Level2.4/             # Personal blog platform
-│   ├── Level2.5/             # Interactive school website
+│   ├── Level2.5/             # Sanad website
 │   ├── Level3.6/             # Professional dashboard
 │   └── Level3.7/             # Weather dashboard
 ├── 📄 docs/                  # Documentation and guides
